@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cart-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    order: 1; /* زر السلة يأتي قبل زر المفضلة */
+}
+
+.cart-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.favorite-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    color: #007bff;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: auto;
+    transition: background 0.3s, color 0.3s;
+    order: 2;
+}
+
+.favorite-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.favorite-btn i {
+    font-size: 18px;
+}
